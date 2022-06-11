@@ -1,6 +1,6 @@
 # Simple Python native access library for Video4Linux camera devices
 
-_Warning_: Work in progress. Currently hardwired to YUV format. This will be
+_Warning_: Work (slowly) in progress. Currently hardwired to YUV format. This will be
 fixed soon
 
 This is a simple library that allows one to access camera devices accessible
