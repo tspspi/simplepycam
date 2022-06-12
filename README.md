@@ -15,6 +15,12 @@ Tested on:
 	* FreeBSD 12 (amd64, aarch64)
 	* FreeBSD 13 (amd64, aarch64)
 
+## Currently not implemented / not optimal
+
+* Currently the library does not support anything else than YUV422 captures from
+  the cameras and only outputs RGB888 images as nested Python lists. This will
+  be fixed as soon as possible but will introduce a breaking change.
+
 # Building
 
 Use ```setup.py``` in ```cext```:
