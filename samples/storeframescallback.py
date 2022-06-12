@@ -1,8 +1,4 @@
 from PIL import Image
-import sys
-
-sys.path.append("./build/lib.freebsd-12.3-RELEASE-p5-amd64-3.8")
-
 import simplepycam
 
 nStoredImages = 0
