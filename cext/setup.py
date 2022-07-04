@@ -1,11 +1,17 @@
 from distutils.core import setup, Extension
 
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
 setup(
     name="simplepycam",
     version="0.1",
 	author='Thomas Spielauer',
 	description='Simple Python native access library for Video4Linux camera devices',
-	long_description='file:README.md',
+	long_description=long_description,
+	long_description_content_type='text/markdown',
+	license_files='../LICENSE.md',
 	url='https://github.com/tspspi/simplepycam',
 
 	python_requires='>=3.6',
