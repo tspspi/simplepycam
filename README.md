@@ -92,3 +92,7 @@ for i in range(100):
 cam.streamOff()
 cam.close()
 ```
+
+# API documentation
+
+![UML diagram of Python side](https://raw.githubusercontent.com/tspspi/simplepycam/master/doc/pythonuml.png)
