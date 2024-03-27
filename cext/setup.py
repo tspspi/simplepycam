@@ -6,7 +6,7 @@ long_description = (this_directory / "README.rst").read_text()
 
 setup(
     name="simplepycam-tspspi",
-    version="0.1.2",
+    version="0.1.3",
 	author='Thomas Spielauer',
     author_email="pypipackages01@tspi.at",
 	description='Simple Python native access library for Video4Linux camera devices',
@@ -14,6 +14,10 @@ setup(
 #	long_description_content_type='text/markdown',
 	license_files='LICENSE.md',
 	url='https://github.com/tspspi/simplepycam',
+    package_data={
+        'simplepycam-tspspi' : [ 'simplepycam.h' ]
+    },
+    include_package_data=True,
 
 	python_requires='>=3.6',
 	license='BSD',
