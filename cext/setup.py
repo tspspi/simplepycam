@@ -6,7 +6,7 @@ long_description = (this_directory / "README.rst").read_text()
 
 setup(
     name="simplepycam-tspspi",
-    version="0.1.1",
+    version="0.1.2",
 	author='Thomas Spielauer',
     author_email="pypipackages01@tspi.at",
 	description='Simple Python native access library for Video4Linux camera devices',
@@ -42,6 +42,6 @@ setup(
     },
 
     ext_modules=[
-        Extension("simplepycam", ["simplepycam.c"], include_dirs=["/usr/local/include"], headers=["simplepycam.h"])
+        Extension("simplepycam", ["simplepycam.c", "simplepycam.h"], include_dirs=["/usr/local/include"])
     ]
 )
