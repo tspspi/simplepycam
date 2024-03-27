@@ -21,6 +21,14 @@ Tested on:
   the cameras and only outputs RGB888 images as nested Python lists. This will
   be fixed as soon as possible but will introduce a breaking change.
 
+# Installing via PyPi
+
+The package is available as a source distribution via PyPi:
+
+```
+pip install simplepycam-tspspi
+```
+
 # Building
 
 Use ```setup.py``` in ```cext```:
