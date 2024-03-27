@@ -2,7 +2,7 @@ from distutils.core import setup, Extension
 
 from pathlib import Path
 this_directory = Path(__file__).parent
-long_description = (this_directory / "README.md").read_text()
+long_description = (this_directory / "README.rst").read_text()
 
 setup(
     name="simplepycam-tspspi",
@@ -11,7 +11,7 @@ setup(
     author_email="pypipackages01@tspi.at",
 	description='Simple Python native access library for Video4Linux camera devices',
 	long_description=long_description,
-	long_description_content_type='text/markdown',
+#	long_description_content_type='text/markdown',
 	license_files='LICENSE.md',
 	url='https://github.com/tspspi/simplepycam',
 
