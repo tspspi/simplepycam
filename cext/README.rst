@@ -29,6 +29,23 @@ Currently not implemented / not optimal
 Installing via PyPi
 ===================
 
+Note that you have to install some native packages on FreeBSD before
+building the extension. Those are:
+
+-  ``multimedia/v4l_compat``
+-  ``multimedia/webcamd``
+
+To install and start the required services:
+
+::
+
+   pkg install multimedia/v4l_compat multimedia/webcamd
+   echo "webcamd_enable=\"YES\"" >> /etc/rc.conf
+   echo "cuse_load=\"YES\"" >> /boot/loader.conf
+   kldload cuse
+   /etc/rc.d/devd restart
+   /usr/local/etc/rc.d/webcamd start
+
 The package is available as a source distribution via PyPi:
 
 ::
