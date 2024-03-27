@@ -6,7 +6,7 @@ long_description = (this_directory / "README.rst").read_text()
 
 setup(
     name="simplepycam-tspspi",
-    version="0.1.3",
+    version="0.1.4",
 	author='Thomas Spielauer',
     author_email="pypipackages01@tspi.at",
 	description='Simple Python native access library for Video4Linux camera devices',
