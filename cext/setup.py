@@ -46,6 +46,6 @@ setup(
     },
 
     ext_modules=[
-        Extension("simplepycam", ["simplepycam.c", "simplepycam.h"], include_dirs=["/usr/local/include"])
+        Extension("simplepycam", ["simplepycam.c"], include_dirs=["/usr/local/include"])
     ]
 )
